@@ -1,4 +1,9 @@
-default: build
+programName = program
+
+default: build run
+
+run:
+	./$(programName)
 
 build:
-	c++ -Wall main.cpp -o program
+	c++ -Wall main.cpp -o $(programName)
