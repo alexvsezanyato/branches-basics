@@ -1,11 +1,12 @@
 #include <iostream>
 
-void welcome()
+void welcome(std::string name)
 {	
-	std::cout << "Hello, this is branch testing :) \n";
+	std::cout << "Hello, " << name << "! \n";
+	std::cout << "This is branch testing :) \n";
 }
 
-int main()
+int main(int argc, char* argv[])
 {
-	welcome();
+	if (argc == 2) welcome(argv[1]);
 }
